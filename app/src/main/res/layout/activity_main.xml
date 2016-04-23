@@ -13,65 +13,53 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Nanodegree Apps! :D"
+        android:text="@string/app_intro"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
-    <LinearLayout
-        android:id="@+id/layout_my_apps"
-        android:orientation="vertical"
-        android:layout_width="200dp"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp">
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true">
 
-        <Button
-            android:id="@+id/button_popularmovies"
-            android:text="Popular Movies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
-            android:onClick="openApp" />
+        <LinearLayout
+            android:id="@+id/layout_my_apps"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button_stockhawk"
-            android:text="Stock Hawk"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button_popularmovies"
-            android:onClick="openApp" />
+            <Button
+                android:id="@+id/button_popularmovies"
+                android:text="@string/app_popularmovies_name"
+                style="@style/LauncherButton" />
 
-        <Button
-            android:id="@+id/button_bigger"
-            android:text="Build it Bigger"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button_stockhawk"
-            android:onClick="openApp" />
+            <Button
+                android:id="@+id/button_stockhawk"
+                android:text="@string/app_stockhawk_name"
+                style="@style/LauncherButton" />
 
-        <Button
-            android:id="@+id/button_material"
-            android:text="Make Your App Material"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button_bigger"
-            android:onClick="openApp" />
+            <Button
+                android:id="@+id/button_bigger"
+                android:text="@string/app_bigger_name"
+                style="@style/LauncherButton" />
 
-        <Button
-            android:id="@+id/button_ubiquitous"
-            android:text="Go Ubiquitous"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button_material"
-            android:onClick="openApp" />
+            <Button
+                android:id="@+id/button_material"
+                android:text="@string/app_material_name"
+                style="@style/LauncherButton" />
 
-        <Button
-            android:id="@+id/button_capstone"
-            android:text="Capstone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button_ubiquitous"
-            android:onClick="openApp" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/button_ubiquitous"
+                android:text="@string/app_ubiquitous_name"
+                style="@style/LauncherButton" />
+
+            <Button
+                android:id="@+id/button_capstone"
+                android:text="@string/app_capstone_name"
+                style="@style/LauncherButton" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

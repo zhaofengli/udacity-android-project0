@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Project Zero</string>
+    <string name="app_intro">My Nanodegree Apps! :D</string>
+    <string name="app_popularmovies_name">Popular Movies</string>
+    <string name="app_stockhawk_name">Stock Hawk</string>
+    <string name="app_bigger_name">Build it Bigger</string>
+    <string name="app_material_name">Make Your App Material</string>
+    <string name="app_ubiquitous_name">Go Ubiquitous</string>
+    <string name="app_capstone_name">Capstone</string>
 </resources>
